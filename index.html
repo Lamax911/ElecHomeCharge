@@ -52,11 +52,16 @@ a { color: inherit; }
 .wrap {
   width: 100%;
   max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-@media (min-width: 480px)  { .wrap { padding: 0 24px; } }
-@media (min-width: 1024px) { .wrap { padding: 0 40px; } }
+@media (min-width: 480px)  { .wrap { padding-left: 24px; padding-right: 24px; } }
+@media (min-width: 1024px) { .wrap { padding-left: 40px; padding-right: 40px; } }
+
+html, body { width: 100%; }
+section, footer, nav { width: 100%; }
 
 .sec { padding: 64px 0; }
 @media (min-width: 768px) { .sec { padding: 96px 0; } }
@@ -1482,7 +1487,7 @@ footer {
         <p class="foot-desc">Service d'installation de bornes de recharge en Île-de-France. Opéré par Guyart Électricité — certifié IRVE.</p>
         <div class="foot-contact">
           <a href="tel:0601171062"><span>📞</span> 06 01 17 10 62</a>
-          <a href="mailto:guyartelec@yahoo.fr"><span>✉️</span> guyartelec@yahoo.fr</a>
+          <a href="/cdn-cgi/l/email-protection#d2b5a7abb3a0a6b7beb7b192abb3babdbdfcb4a0"><span>✉️</span> <span class="__cf_email__" data-cfemail="11766468706365747d7472516870797e7e3f7763">[email&#160;protected]</span></a>
           <a href="#"><span>📍</span> Savigny-le-Temple (77) · Île-de-France</a>
         </div>
       </div>
@@ -1534,7 +1539,7 @@ footer {
   <a href="#devis" class="sticky-devis">📋 Devis gratuit</a>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   /* Navbar scroll */
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
@@ -1571,13 +1576,4 @@ footer {
   /* Smooth scroll offset */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e) {
-      const tgt = document.querySelector(this.getAttribute('href'));
-      if (tgt) {
-        e.preventDefault();
-        window.scrollTo({ top: tgt.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' });
-      }
-    });
-  });
-</script>
-</body>
-</html>
+      const tgt = document.q
